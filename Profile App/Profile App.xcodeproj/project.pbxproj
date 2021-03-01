@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E07C0FC925ED2C210049A8B5 /* PACardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C0FC825ED2C210049A8B5 /* PACardInfo.swift */; };
+		E07C0FCC25ED2C960049A8B5 /* PAPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C0FCB25ED2C960049A8B5 /* PAPosition.swift */; };
+		E07C0FD325ED2F0B0049A8B5 /* EditInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C0FD225ED2F0B0049A8B5 /* EditInfoController.swift */; };
+		E07C0FD625ED33020049A8B5 /* RoundedImagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C0FD525ED33020049A8B5 /* RoundedImagView.swift */; };
 		E0F9DBA025EC4DFA003ECF11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F9DB9F25EC4DFA003ECF11 /* AppDelegate.swift */; };
 		E0F9DBA225EC4DFA003ECF11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F9DBA125EC4DFA003ECF11 /* SceneDelegate.swift */; };
 		E0F9DBA425EC4DFA003ECF11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F9DBA325EC4DFA003ECF11 /* ViewController.swift */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E07C0FC825ED2C210049A8B5 /* PACardInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PACardInfo.swift; sourceTree = "<group>"; };
+		E07C0FCB25ED2C960049A8B5 /* PAPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAPosition.swift; sourceTree = "<group>"; };
+		E07C0FD225ED2F0B0049A8B5 /* EditInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInfoController.swift; sourceTree = "<group>"; };
+		E07C0FD525ED33020049A8B5 /* RoundedImagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImagView.swift; sourceTree = "<group>"; };
 		E0F9DB9C25EC4DFA003ECF11 /* Profile App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Profile App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F9DB9F25EC4DFA003ECF11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0F9DBA125EC4DFA003ECF11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +49,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E07C0FC725ED2BEC0049A8B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E07C0FC825ED2C210049A8B5 /* PACardInfo.swift */,
+				E07C0FCB25ED2C960049A8B5 /* PAPosition.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E07C0FCE25ED2DCF0049A8B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E0F9DBBB25EC5728003ECF11 /* RoundedButtonView.swift */,
+				E07C0FD525ED33020049A8B5 /* RoundedImagView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E07C0FCF25ED2E110049A8B5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E0F9DBA325EC4DFA003ECF11 /* ViewController.swift */,
+				E07C0FD225ED2F0B0049A8B5 /* EditInfoController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E07C0FD025ED2E3B0049A8B5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E0F9DB9F25EC4DFA003ECF11 /* AppDelegate.swift */,
+				E0F9DBA525EC4DFA003ECF11 /* Main.storyboard */,
+				E0F9DBA125EC4DFA003ECF11 /* SceneDelegate.swift */,
+				E0F9DBAD25EC4DFD003ECF11 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		E0F9DB9325EC4DFA003ECF11 = {
 			isa = PBXGroup;
 			children = (
@@ -61,14 +107,12 @@
 		E0F9DB9E25EC4DFA003ECF11 /* Profile App */ = {
 			isa = PBXGroup;
 			children = (
-				E0F9DB9F25EC4DFA003ECF11 /* AppDelegate.swift */,
-				E0F9DBA125EC4DFA003ECF11 /* SceneDelegate.swift */,
-				E0F9DBA325EC4DFA003ECF11 /* ViewController.swift */,
-				E0F9DBA525EC4DFA003ECF11 /* Main.storyboard */,
-				E0F9DBBB25EC5728003ECF11 /* RoundedButtonView.swift */,
+				E07C0FC725ED2BEC0049A8B5 /* Models */,
+				E07C0FCF25ED2E110049A8B5 /* Controllers */,
+				E07C0FCE25ED2DCF0049A8B5 /* Views */,
+				E07C0FD025ED2E3B0049A8B5 /* Resources */,
 				E0F9DBA825EC4DFD003ECF11 /* Assets.xcassets */,
 				E0F9DBAA25EC4DFD003ECF11 /* LaunchScreen.storyboard */,
-				E0F9DBAD25EC4DFD003ECF11 /* Info.plist */,
 			);
 			path = "Profile App";
 			sourceTree = "<group>";
@@ -144,7 +188,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07C0FC925ED2C210049A8B5 /* PACardInfo.swift in Sources */,
+				E07C0FCC25ED2C960049A8B5 /* PAPosition.swift in Sources */,
+				E07C0FD625ED33020049A8B5 /* RoundedImagView.swift in Sources */,
 				E0F9DBA425EC4DFA003ECF11 /* ViewController.swift in Sources */,
+				E07C0FD325ED2F0B0049A8B5 /* EditInfoController.swift in Sources */,
 				E0F9DBA025EC4DFA003ECF11 /* AppDelegate.swift in Sources */,
 				E0F9DBBC25EC5728003ECF11 /* RoundedButtonView.swift in Sources */,
 				E0F9DBA225EC4DFA003ECF11 /* SceneDelegate.swift in Sources */,
