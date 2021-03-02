@@ -28,7 +28,7 @@ class RoundedImagView: UIImageView {
         }
     }
 
-    @IBInspectable override var clipsToBounds: Bool {
+    @IBInspectable var clipsToBounds2: Bool {
         set {
             self.clipsToBounds = true
         }

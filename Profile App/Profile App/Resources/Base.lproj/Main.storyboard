@@ -17,32 +17,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Edwards Alex Alexeev" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mht-OM-WwI">
-                                <rect key="frame" x="57" y="290" width="301" height="38.5"/>
+                                <rect key="frame" x="57" y="239" width="301" height="38.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="21 years" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TBk-B8-OHn">
-                                <rect key="frame" x="159" y="336" width="97" height="34"/>
+                                <rect key="frame" x="159" y="285" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Position:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bxy-B4-DnE">
-                                <rect key="frame" x="49" y="385" width="78" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHd-Hb-QCB">
+                                <rect key="frame" x="57" y="445" width="301" height="298"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Developer" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sLI-MV-2Eb">
-                                <rect key="frame" x="159" y="385" width="124" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHd-Hb-QCB">
-                                <rect key="frame" x="57" y="428" width="301" height="315"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Let me introduce myself. My name is Alex. I’m 21 years old. I was born in Krasnodar, but now live in Moscow. I’m divorced, but now I have a new girlfriend who is a professional dancer. My parents live in a small village near Krasnodar. I’m the only child in the family. I have two lovely kids. My work experience accounts 7 years. What concerns my character and skills, I’m very hard-working, responsible, diligent, and social person with a good sense of humor. In the pastime, I’m crazy about fishing and cars repairing. That’s all all about myself.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,7 +39,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pax-bz-qWc" customClass="RoundedButtonView" customModule="Profile_App" customModuleProvider="target">
                                 <rect key="frame" x="57" y="800" width="301" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.15907945030000001" green="0.27563929749999999" blue="0.57603462299999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.0" green="0.25490196079999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Contacts">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -68,19 +57,41 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Снимок экрана 2021-02-24 в 01.34.05" translatesAutoresizingMaskIntoConstraints="NO" id="VIw-UM-oln" customClass="RoundedImagView" customModule="Profile_App" customModuleProvider="target">
-                                <rect key="frame" x="148" y="122" width="119" height="139"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="VIw-UM-oln" customClass="RoundedImagView" customModule="Profile_App" customModuleProvider="target">
+                                <rect key="frame" x="148" y="101" width="119" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="68"/>
+                                        <real key="value" value="70"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="4"/>
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds2" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="K7c-Om-Vse">
+                                <rect key="frame" x="53" y="327" width="308" height="100"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="46c-f5-ig8" customClass="TitleDescriptionView" customModule="Profile_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="308" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="positionText" value="Position:"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="developerText" value="Developer"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PGS-9l-Slb" customClass="TitleDescriptionView" customModule="Profile_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="308" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="positionText" value="Experience:"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="developerText" value="7 years"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -89,13 +100,13 @@
                     <navigationItem key="navigationItem" id="C5U-CJ-weO">
                         <rightBarButtonItems>
                             <barButtonItem title="Edit" id="YVq-Ua-im6">
-                                <color key="tintColor" red="0.15907945030000001" green="0.27563929749999999" blue="0.57603462299999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.0" green="0.25490196079999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="L6p-Fz-o44" kind="show" id="LZx-rH-l7Q"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Item" image="square.and.arrow.up" catalog="system" id="vPv-3o-NQE">
-                                <color key="tintColor" red="0.15907945030000001" green="0.27563929749999999" blue="0.57603462299999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.0" green="0.25490196079999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
@@ -132,6 +143,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BvF-Bk-7t1">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.25490196078431371" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -151,7 +163,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eVp-1e-5UM">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.15907945030000001" green="0.27563929749999999" blue="0.57603462299999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.0" green="0.25490196079999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.25490196079999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.25490196079999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -171,15 +185,15 @@
             <size key="intrinsicContentSize" width="87" height="39"/>
         </designable>
         <designable name="VIw-UM-oln">
-            <size key="intrinsicContentSize" width="720" height="848"/>
+            <size key="intrinsicContentSize" width="120" height="120"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="LZx-rH-l7Q"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="photo" width="120" height="120"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
-        <image name="Снимок экрана 2021-02-24 в 01.34.05" width="720" height="848"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
