@@ -7,7 +7,7 @@
 
 import UIKit
 
-@IBDesignable
+//@IBDesignable
 class RoundedImagView: UIImageView {
 
     @IBInspectable var borderWidth: CGFloat {

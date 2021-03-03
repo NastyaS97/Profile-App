@@ -28,17 +28,15 @@
             <rect key="frame" x="0.0" y="0.0" width="411" height="56"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Position:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emQ-pk-Sh9">
-                    <rect key="frame" x="20" y="15" width="117" height="27"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emQ-pk-Sh9">
+                    <rect key="frame" x="15" y="15" width="274.5" height="26"/>
                     <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" name="Montserrat-ExtraLight" family="Montserrat" pointSize="17"/>
                     <nil key="textColor"/>
                     <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Developer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8e-Lc-NGc">
-                    <rect key="frame" x="111" y="12" width="280" height="33"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Developer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8e-Lc-NGc">
+                    <rect key="frame" x="304.5" y="15" width="91.5" height="26"/>
                     <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -46,6 +44,16 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="ful-97-5dN"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ful-97-5dN" firstAttribute="bottom" secondItem="emQ-pk-Sh9" secondAttribute="bottom" constant="15" id="Bbr-89-uXJ"/>
+                <constraint firstItem="emQ-pk-Sh9" firstAttribute="top" secondItem="Tr6-dm-HHP" secondAttribute="top" constant="15" id="R6R-3k-Ajl"/>
+                <constraint firstAttribute="trailing" secondItem="O8e-Lc-NGc" secondAttribute="trailing" constant="15" id="UPN-xx-Ilo"/>
+                <constraint firstItem="emQ-pk-Sh9" firstAttribute="leading" secondItem="Tr6-dm-HHP" secondAttribute="leading" constant="15" id="faI-yP-E5G"/>
+                <constraint firstItem="O8e-Lc-NGc" firstAttribute="top" secondItem="Tr6-dm-HHP" secondAttribute="top" constant="15" id="hJn-Wv-24W"/>
+                <constraint firstItem="ful-97-5dN" firstAttribute="bottom" secondItem="O8e-Lc-NGc" secondAttribute="bottom" constant="15" id="jL2-hL-Age"/>
+                <constraint firstItem="O8e-Lc-NGc" firstAttribute="leading" secondItem="emQ-pk-Sh9" secondAttribute="trailing" constant="15" id="jLV-tr-8mL"/>
+                <constraint firstItem="O8e-Lc-NGc" firstAttribute="leading" secondItem="emQ-pk-Sh9" secondAttribute="trailing" constant="15" id="xwH-9s-8yH"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="-557.24637681159425" y="-127.23214285714285"/>
         </view>

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E07C0FC925ED2C210049A8B5 /* PACardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C0FC825ED2C210049A8B5 /* PACardInfo.swift */; };
 		E07C0FCC25ED2C960049A8B5 /* PAPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C0FCB25ED2C960049A8B5 /* PAPosition.swift */; };
-		E07C0FD325ED2F0B0049A8B5 /* EditInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C0FD225ED2F0B0049A8B5 /* EditInfoController.swift */; };
 		E07C0FD625ED33020049A8B5 /* RoundedImagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C0FD525ED33020049A8B5 /* RoundedImagView.swift */; };
 		E07DF70725EE84B60007EBE9 /* TitleDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07DF70625EE84B60007EBE9 /* TitleDescriptionView.swift */; };
 		E07DF70A25EE84C30007EBE9 /* TitleDescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E07DF70925EE84C30007EBE9 /* TitleDescriptionView.xib */; };
@@ -17,6 +16,11 @@
 		E07DF71425EE90AE0007EBE9 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E07DF71325EE90AD0007EBE9 /* Montserrat-BlackItalic.ttf */; };
 		E07DF71825EE91670007EBE9 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E07DF71725EE91670007EBE9 /* Montserrat-Bold.ttf */; };
 		E07DF71B25EE916E0007EBE9 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E07DF71A25EE916E0007EBE9 /* Montserrat-ExtraLight.ttf */; };
+		E07DF71E25EEA2520007EBE9 /* ContactsEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07DF71D25EEA2520007EBE9 /* ContactsEditController.swift */; };
+		E07DF72325EEA2AD0007EBE9 /* EditInfoConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07DF72225EEA2AD0007EBE9 /* EditInfoConroller.swift */; };
+		E07DF72725EF90640007EBE9 /* SF-Font-Pro.dmg in Resources */ = {isa = PBXBuildFile; fileRef = E07DF72625EF90640007EBE9 /* SF-Font-Pro.dmg */; };
+		E07DF72A25EF91660007EBE9 /* SF-Pro-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = E07DF72925EF91660007EBE9 /* SF-Pro-Display-Black.otf */; };
+		E07DF72D25EF91C60007EBE9 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E07DF72C25EF91C60007EBE9 /* SF-Pro-Display-Medium.otf */; };
 		E0F9DBA025EC4DFA003ECF11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F9DB9F25EC4DFA003ECF11 /* AppDelegate.swift */; };
 		E0F9DBA225EC4DFA003ECF11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F9DBA125EC4DFA003ECF11 /* SceneDelegate.swift */; };
 		E0F9DBA425EC4DFA003ECF11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F9DBA325EC4DFA003ECF11 /* ViewController.swift */; };
@@ -29,7 +33,6 @@
 /* Begin PBXFileReference section */
 		E07C0FC825ED2C210049A8B5 /* PACardInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PACardInfo.swift; sourceTree = "<group>"; };
 		E07C0FCB25ED2C960049A8B5 /* PAPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAPosition.swift; sourceTree = "<group>"; };
-		E07C0FD225ED2F0B0049A8B5 /* EditInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInfoController.swift; sourceTree = "<group>"; };
 		E07C0FD525ED33020049A8B5 /* RoundedImagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImagView.swift; sourceTree = "<group>"; };
 		E07DF70625EE84B60007EBE9 /* TitleDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleDescriptionView.swift; sourceTree = "<group>"; };
 		E07DF70925EE84C30007EBE9 /* TitleDescriptionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleDescriptionView.xib; sourceTree = "<group>"; };
@@ -37,6 +40,11 @@
 		E07DF71325EE90AD0007EBE9 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
 		E07DF71725EE91670007EBE9 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		E07DF71A25EE916E0007EBE9 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		E07DF71D25EEA2520007EBE9 /* ContactsEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsEditController.swift; sourceTree = "<group>"; };
+		E07DF72225EEA2AD0007EBE9 /* EditInfoConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInfoConroller.swift; sourceTree = "<group>"; };
+		E07DF72625EF90640007EBE9 /* SF-Font-Pro.dmg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Font-Pro.dmg"; sourceTree = "<group>"; };
+		E07DF72925EF91660007EBE9 /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
+		E07DF72C25EF91C60007EBE9 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
 		E0F9DB9C25EC4DFA003ECF11 /* Profile App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Profile App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F9DB9F25EC4DFA003ECF11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0F9DBA125EC4DFA003ECF11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,7 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				E0F9DBA325EC4DFA003ECF11 /* ViewController.swift */,
-				E07C0FD225ED2F0B0049A8B5 /* EditInfoController.swift */,
+				E07DF72225EEA2AD0007EBE9 /* EditInfoConroller.swift */,
+				E07DF71D25EEA2520007EBE9 /* ContactsEditController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -114,6 +123,19 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		E0E8C52625EF9A33002796D3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E07DF71725EE91670007EBE9 /* Montserrat-Bold.ttf */,
+				E07DF71A25EE916E0007EBE9 /* Montserrat-ExtraLight.ttf */,
+				E07DF71325EE90AD0007EBE9 /* Montserrat-BlackItalic.ttf */,
+				E07DF72925EF91660007EBE9 /* SF-Pro-Display-Black.otf */,
+				E07DF72625EF90640007EBE9 /* SF-Font-Pro.dmg */,
+				E07DF72C25EF91C60007EBE9 /* SF-Pro-Display-Medium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		E0F9DB9325EC4DFA003ECF11 = {
 			isa = PBXGroup;
 			children = (
@@ -140,9 +162,7 @@
 				E07DF71125EE88630007EBE9 /* Extension */,
 				E07C0FD025ED2E3B0049A8B5 /* Resources */,
 				E0F9DBA825EC4DFD003ECF11 /* Assets.xcassets */,
-				E07DF71325EE90AD0007EBE9 /* Montserrat-BlackItalic.ttf */,
-				E07DF71A25EE916E0007EBE9 /* Montserrat-ExtraLight.ttf */,
-				E07DF71725EE91670007EBE9 /* Montserrat-Bold.ttf */,
+				E0E8C52625EF9A33002796D3 /* Fonts */,
 				E0F9DBAA25EC4DFD003ECF11 /* LaunchScreen.storyboard */,
 			);
 			path = "Profile App";
@@ -158,6 +178,7 @@
 				E0F9DB9825EC4DFA003ECF11 /* Sources */,
 				E0F9DB9925EC4DFA003ECF11 /* Frameworks */,
 				E0F9DB9A25EC4DFA003ECF11 /* Resources */,
+				E0E8C52825EF9F1C002796D3 /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -205,8 +226,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07DF72725EF90640007EBE9 /* SF-Font-Pro.dmg in Resources */,
 				E0F9DBAC25EC4DFD003ECF11 /* LaunchScreen.storyboard in Resources */,
+				E07DF72A25EF91660007EBE9 /* SF-Pro-Display-Black.otf in Resources */,
 				E0F9DBA925EC4DFD003ECF11 /* Assets.xcassets in Resources */,
+				E07DF72D25EF91C60007EBE9 /* SF-Pro-Display-Medium.otf in Resources */,
 				E07DF71825EE91670007EBE9 /* Montserrat-Bold.ttf in Resources */,
 				E07DF71B25EE916E0007EBE9 /* Montserrat-ExtraLight.ttf in Resources */,
 				E07DF70A25EE84C30007EBE9 /* TitleDescriptionView.xib in Resources */,
@@ -217,18 +241,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E0E8C52825EF9F1C002796D3 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E0F9DB9825EC4DFA003ECF11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07DF72325EEA2AD0007EBE9 /* EditInfoConroller.swift in Sources */,
 				E07C0FC925ED2C210049A8B5 /* PACardInfo.swift in Sources */,
 				E07C0FCC25ED2C960049A8B5 /* PAPosition.swift in Sources */,
 				E07C0FD625ED33020049A8B5 /* RoundedImagView.swift in Sources */,
 				E0F9DBA425EC4DFA003ECF11 /* ViewController.swift in Sources */,
-				E07C0FD325ED2F0B0049A8B5 /* EditInfoController.swift in Sources */,
 				E0F9DBA025EC4DFA003ECF11 /* AppDelegate.swift in Sources */,
 				E07DF70725EE84B60007EBE9 /* TitleDescriptionView.swift in Sources */,
+				E07DF71E25EEA2520007EBE9 /* ContactsEditController.swift in Sources */,
 				E0F9DBBC25EC5728003ECF11 /* RoundedButtonView.swift in Sources */,
 				E0F9DBA225EC4DFA003ECF11 /* SceneDelegate.swift in Sources */,
 				E07DF70F25EE88290007EBE9 /* UIView+Ex.swift in Sources */,

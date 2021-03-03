@@ -6,9 +6,9 @@
 //
 
 enum PAPosition: String {
-    case qa
-    case developer
-    case businessAnalyst
-    case productOwner
-    case systemAnalyst
+    case qa = "QA Tester"
+    case developer = "Developer"
+    case businessAnalyst = "Business Analyst"
+    case productOwner = "Product Owner"
+    case systemAnalyst = "System Analyst"
 }

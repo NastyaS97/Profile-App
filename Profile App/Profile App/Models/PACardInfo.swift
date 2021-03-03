@@ -8,7 +8,10 @@
 import Foundation
 
 class PACardInfo {
-    var name: String = "Soiko Anastasiya Aleksandrovna"
+    var name: String = "Anastasiya"
+    var surname: String = "Soiko "
+    var patronymic: String = "Aleksandrovna"
+    var age: Int = 23
     var position: PAPosition = .developer
     var expirience: String = "3 month"
     var info: String = "Hey. I'm person"

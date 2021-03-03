@@ -7,7 +7,7 @@
 
 import UIKit
 
-@IBDesignable
+//@IBDesignable
 class RoundedButtonView: UIButton {
 
     @IBInspectable var borderWidth: CGFloat {
