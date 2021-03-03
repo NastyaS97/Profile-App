@@ -9,6 +9,10 @@ import UIKit
 
 class ContactsEditController: UIViewController {
 
+    @IBOutlet weak var phoneContact: UITextField!
+    @IBOutlet weak var emailContact: UITextField!
+    @IBOutlet weak var skypeContact: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
