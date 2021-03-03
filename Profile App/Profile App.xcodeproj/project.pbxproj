@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E070472725EFDD2300B03CF4 /* AnotherPartOfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070472625EFDD2300B03CF4 /* AnotherPartOfView.swift */; };
+		E070472B25F046AD00B03CF4 /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070472A25F046AD00B03CF4 /* Date+Ex.swift */; };
+		E070472E25F051E100B03CF4 /* ContactsControllerEnded.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070472D25F051E100B03CF4 /* ContactsControllerEnded.swift */; };
 		E07C0FC925ED2C210049A8B5 /* PACardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C0FC825ED2C210049A8B5 /* PACardInfo.swift */; };
 		E07C0FCC25ED2C960049A8B5 /* PAPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C0FCB25ED2C960049A8B5 /* PAPosition.swift */; };
 		E07C0FD625ED33020049A8B5 /* RoundedImagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C0FD525ED33020049A8B5 /* RoundedImagView.swift */; };
@@ -33,6 +35,8 @@
 
 /* Begin PBXFileReference section */
 		E070472625EFDD2300B03CF4 /* AnotherPartOfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherPartOfView.swift; sourceTree = "<group>"; };
+		E070472A25F046AD00B03CF4 /* Date+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
+		E070472D25F051E100B03CF4 /* ContactsControllerEnded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsControllerEnded.swift; sourceTree = "<group>"; };
 		E07C0FC825ED2C210049A8B5 /* PACardInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PACardInfo.swift; sourceTree = "<group>"; };
 		E07C0FCB25ED2C960049A8B5 /* PAPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAPosition.swift; sourceTree = "<group>"; };
 		E07C0FD525ED33020049A8B5 /* RoundedImagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImagView.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 				E0F9DBA325EC4DFA003ECF11 /* ViewController.swift */,
 				E07DF72225EEA2AD0007EBE9 /* EditInfoConroller.swift */,
 				E07DF71D25EEA2520007EBE9 /* ContactsEditController.swift */,
+				E070472D25F051E100B03CF4 /* ContactsControllerEnded.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				E07DF70E25EE88290007EBE9 /* UIView+Ex.swift */,
+				E070472A25F046AD00B03CF4 /* Date+Ex.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -277,11 +283,13 @@
 				E0F9DBA425EC4DFA003ECF11 /* ViewController.swift in Sources */,
 				E0F9DBA025EC4DFA003ECF11 /* AppDelegate.swift in Sources */,
 				E07DF70725EE84B60007EBE9 /* TitleDescriptionView.swift in Sources */,
+				E070472B25F046AD00B03CF4 /* Date+Ex.swift in Sources */,
 				E07DF71E25EEA2520007EBE9 /* ContactsEditController.swift in Sources */,
 				E0F9DBBC25EC5728003ECF11 /* RoundedButtonView.swift in Sources */,
 				E0F9DBA225EC4DFA003ECF11 /* SceneDelegate.swift in Sources */,
 				E070472725EFDD2300B03CF4 /* AnotherPartOfView.swift in Sources */,
 				E07DF70F25EE88290007EBE9 /* UIView+Ex.swift in Sources */,
+				E070472E25F051E100B03CF4 /* ContactsControllerEnded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

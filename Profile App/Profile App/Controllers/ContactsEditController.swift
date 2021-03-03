@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ContactsEditController: UIViewController {
+class ContactsEditController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var phoneContact: UITextField!
     @IBOutlet weak var emailContact: UITextField!
@@ -16,16 +16,48 @@ class ContactsEditController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-    /*
-    // MARK: - Navigation
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(viewDidTapped)))
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        self.phoneContact.textContentType = .telephoneNumber
+        self.phoneContact.keyboardType = .phonePad
+        self.emailContact.textContentType = .emailAddress
+        self.emailContact.keyboardType = .emailAddress
+        self.skypeContact.textContentType = .nickname
 
+        self.emailContact.delegate = self
+        self.phoneContact.delegate = self
+        self.skypeContact.delegate = self
+    }
+
+    @objc private func viewDidTapped() {
+        self.view.endEditing(true)
+    }
+
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+    }
+
+    func textFieldDidEndEditing(_ textField: UITextField) {
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+
+        if textField.textContentType == .some(.emailAddress) {
+            return true
+        } else if textField.textContentType == .some(.telephoneNumber) {
+            let currentTextField = textField.text ?? ""
+            let resultText = (currentTextField as NSString).replacingCharacters(in: range, with: string)
+            if resultText.count >= 30 {
+                return false
+            } else {
+                return true
+            }
+        } else {
+            return false
+        }
+    }
 }

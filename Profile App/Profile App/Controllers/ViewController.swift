@@ -7,7 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, EditInfoConrollerDelegate {
+    func nameDidCganged(name: String) {
+    }
+    
 
     //MARK: - variables
 
@@ -75,6 +78,14 @@ class ViewController: UIViewController {
             if let controller = segue.destination as? EditInfoConroller {
                 controller.userCardInfo = self.userCard
             }
+        case "saveAndEditSegue":
+            if let controller = segue.destination as? EditInfoConroller{
+                controller.delegate = self
+            }
+//        case "editContactsInfo":
+//            if let controller = segue.destination as? ContactsEditController {
+//                controller.userCardInfo = self.userCard
+//            }
         default:
             break
         }
@@ -82,4 +93,19 @@ class ViewController: UIViewController {
     @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
         print(unwindSegue.destination)
     }
+
+    func ageDidChanged(picker: UIDatePicker, birthDate: Date) {
+        print(birthDate.toInt)
+    }
+
+    func nameDidChanged(name: String) {
+        self.userCard.name = name
+        self.setViewData()
+    }
+
+//    func surnameDidChanged(name: String) {
+//        self.userCard.info = infoEdit
+//        self.setViewData()
+//    }
+
 }
