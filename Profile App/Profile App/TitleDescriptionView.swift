@@ -13,13 +13,6 @@ class TitleDescriptionView: UIView {
     // MARK: - IBInspectable
 
     @IBInspectable
-    var nameText: String = "" {
-        didSet {
-            self.positionName.text = self.positionText
-        }
-    }
-
-    @IBInspectable
     var positionText: String = "" {
         didSet {
             self.positionName.text = self.positionText
@@ -33,11 +26,6 @@ class TitleDescriptionView: UIView {
         }
     }
 
-    // MARK: - IBOutlet
-
-    @IBOutlet var surName:UILabel!
-    @IBOutlet var name:UILabel!
-    @IBOutlet var patronymic:UILabel!
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var positionName: UILabel!
     @IBOutlet weak var developerName: UILabel!

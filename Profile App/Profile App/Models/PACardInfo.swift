@@ -8,11 +8,13 @@
 import Foundation
 
 class PACardInfo {
-    var name: String = "Anastasiya"
-    var surname: String = "Soiko "
-    var patronymic: String = "Aleksandrovna"
-    var age: Int = 23
+    var name: String = "Edward"
+    var surname: String = "Alex"
+    var patronymic: String = "Alexeev"
+    var age: String = "21"
     var position: PAPosition = .developer
-    var expirience: String = "3 month"
-    var info: String = "Hey. I'm person"
+    var expirience: String = "7 years"
+    var info: String = """
+    Let me introduce myself. My name is Alex. I’m 21 years old. I was born in Krasnodar, but now live in Moscow. I’m divorced, but now I have a new girlfriend who is a professional dancer. 
+    """
 }

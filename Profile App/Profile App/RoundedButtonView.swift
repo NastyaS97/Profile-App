@@ -1,5 +1,5 @@
 //
-//  RoundedImagView.swift
+//  RoundedButtonView.swift
 //  Profile App
 //
 //  Created by Настя Сойко on 1.03.21.
@@ -7,10 +7,12 @@
 
 import UIKit
 
-//@IBDesignable
-class RoundedImagView: UIImageView {
+@IBDesignable
+class RoundedButtonView: UIButton {
 
-    @IBInspectable var borderWidth: CGFloat {
+    // MARK: - IBInspectable
+    @IBInspectable var
+        borderWidth: CGFloat {
         set {
             layer.borderWidth = newValue
         }
@@ -28,12 +30,14 @@ class RoundedImagView: UIImageView {
         }
     }
 
-    @IBInspectable var clipsToBounds2: Bool {
+    @IBInspectable var borderColor: UIColor? {
         set {
-            self.clipsToBounds = true
+            guard let uiColor = newValue else { return }
+            layer.borderColor = uiColor.cgColor
         }
         get {
-            return self.clipsToBounds
+            guard let color = layer.borderColor else { return nil }
+            return UIColor(cgColor: color)
         }
     }
 }

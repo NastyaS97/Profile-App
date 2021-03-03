@@ -13,7 +13,6 @@ extension UIView {
     }
     public static var nib: UINib {
         let bundle = Bundle(for: Self.self)
-        bundle.loadNibNamed("UserView", owner: self, options: nil)
         return UINib(nibName: Self.nibName, bundle: bundle)
     }
     func loadFromNib() {

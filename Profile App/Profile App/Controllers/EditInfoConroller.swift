@@ -9,6 +9,8 @@ import UIKit
 
 class EditInfoConroller: UIViewController {
 
+    var userCardInfo: PACardInfo?
+    
     @IBOutlet weak var nameView: UITextField!
     @IBOutlet weak var lastNameView: UITextField!
     @IBOutlet weak var patronymicView: UITextField!
@@ -17,22 +19,49 @@ class EditInfoConroller: UIViewController {
     @IBOutlet weak var experienceView: UITextField!
     @IBOutlet weak var infoView: UITextView!
     @IBOutlet weak var saveView: UIBarButtonItem!
-   
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //       let recognizer = UITapGestureRecognizer(target: self,
+        //                                               action: #selector(saveBarButtonTapped))
+        //
+        //        saveView.addGestureRecognizer(recognizer)
 
-//       let recognizer = UITapGestureRecognizer(target: self,
-//                                               action: #selector(saveBarButtonTapped))
-//
-//        saveView.addGestureRecognizer(recognizer)
-
+        self.setViewData()
     }
+
+    // MARK: - setting view data
+
+    private func setViewData() {
+
+        self.nameView.text = self.userCardInfo?.name
+        self.lastNameView.text = self.userCardInfo?.surname
+        self.patronymicView.text = self.userCardInfo?.patronymic
+        self.ageView.text = self.userCardInfo?.age
+        //        self.positionView.PAPosi = self.userCardInfo?.position
+        self.experienceView.text = self.userCardInfo?.expirience
+        self.infoView.text = self.userCardInfo?.info
+    }
+
+    private func setModelData() {
+        
+        guard let userModel = self.userCardInfo else { return }
+
+        self.nameView.text = self.userCardInfo?.name ?? ""
+        self.lastNameView.text = self.userCardInfo?.surname ?? ""
+        self.patronymicView.text = self.userCardInfo?.patronymic ?? ""
+        self.ageView.text = self.userCardInfo?.age ?? ""
+        //        self.positionView.PAPosi = self.userCardInfo?.position
+        self.experienceView.text = self.userCardInfo?.expirience ?? ""
+        self.infoView.text = self.userCardInfo?.info ?? ""
+    }
+
+    // MARK: - actions
 
     @objc func saveBarButtonTapped() {
         self.navigationController?.popViewController(animated: true)
-
+        self.setModelData()
     }
 
 //    @IBAction func GoToMainePage(_ sender: UIBarButtonItem) {

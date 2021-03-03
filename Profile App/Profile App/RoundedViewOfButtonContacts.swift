@@ -8,12 +8,10 @@
 import UIKit
 
 class RoundedViewOfButtonContacts: UIView {
-    
     @IBInspectable
     var cornerRadious: CGFloat = 0 {
         didSet {
             self.layer.cornerRadius = self.cornerRadious
         }
     }
-    
 }
