@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E070472725EFDD2300B03CF4 /* AnotherPartOfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070472625EFDD2300B03CF4 /* AnotherPartOfView.swift */; };
 		E070472B25F046AD00B03CF4 /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070472A25F046AD00B03CF4 /* Date+Ex.swift */; };
 		E070472E25F051E100B03CF4 /* ContactsControllerEnded.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070472D25F051E100B03CF4 /* ContactsControllerEnded.swift */; };
 		E07C0FC925ED2C210049A8B5 /* PACardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C0FC825ED2C210049A8B5 /* PACardInfo.swift */; };
@@ -34,7 +33,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E070472625EFDD2300B03CF4 /* AnotherPartOfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherPartOfView.swift; sourceTree = "<group>"; };
 		E070472A25F046AD00B03CF4 /* Date+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
 		E070472D25F051E100B03CF4 /* ContactsControllerEnded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsControllerEnded.swift; sourceTree = "<group>"; };
 		E07C0FC825ED2C210049A8B5 /* PACardInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PACardInfo.swift; sourceTree = "<group>"; };
@@ -168,7 +166,6 @@
 				E070471F25EFD14B00B03CF4 /* Views */,
 				E0F9DBBB25EC5728003ECF11 /* RoundedButtonView.swift */,
 				E07DF70625EE84B60007EBE9 /* TitleDescriptionView.swift */,
-				E070472625EFDD2300B03CF4 /* AnotherPartOfView.swift */,
 				E07C0FD525ED33020049A8B5 /* RoundedImagView.swift */,
 				E07C0FCF25ED2E110049A8B5 /* Controllers */,
 				E07DF71125EE88630007EBE9 /* Extension */,
@@ -287,7 +284,6 @@
 				E07DF71E25EEA2520007EBE9 /* ContactsEditController.swift in Sources */,
 				E0F9DBBC25EC5728003ECF11 /* RoundedButtonView.swift in Sources */,
 				E0F9DBA225EC4DFA003ECF11 /* SceneDelegate.swift in Sources */,
-				E070472725EFDD2300B03CF4 /* AnotherPartOfView.swift in Sources */,
 				E07DF70F25EE88290007EBE9 /* UIView+Ex.swift in Sources */,
 				E070472E25F051E100B03CF4 /* ContactsControllerEnded.swift in Sources */,
 			);

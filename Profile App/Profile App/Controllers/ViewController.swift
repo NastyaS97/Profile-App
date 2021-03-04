@@ -10,7 +10,6 @@ import UIKit
 class ViewController: UIViewController, EditInfoConrollerDelegate {
     func nameDidCganged(name: String) {
     }
-    
 
     //MARK: - variables
 
@@ -18,14 +17,15 @@ class ViewController: UIViewController, EditInfoConrollerDelegate {
 
     //MARK: - gui variables
 
-    @IBOutlet weak var surnameEdit: AnotherPartOfView!
-    @IBOutlet weak var nameEdit: AnotherPartOfView!
-    @IBOutlet weak var patronymicEdit: AnotherPartOfView!
-    @IBOutlet weak var ageEdit: AnotherPartOfView!
+    @IBOutlet weak var surnameEdit: UILabel!
+    @IBOutlet weak var nameEdit: UILabel!
+    @IBOutlet weak var patronymicEdit: UILabel!
+    @IBOutlet weak var ageEdit: UILabel!
     @IBOutlet weak var positionEdit: TitleDescriptionView!
     @IBOutlet weak var experienceEdit: TitleDescriptionView!
-    @IBOutlet weak var infoEdit: AnotherPartOfView!
-    @IBOutlet weak var contactButton: RoundedButtonView!
+    @IBOutlet weak var infoEdit: UITextView!
+    @IBOutlet weak var contactButton: UIButton!
+
 
     //MARK: - life cycle
 
@@ -52,13 +52,13 @@ class ViewController: UIViewController, EditInfoConrollerDelegate {
     //MARK: - actions
 
     func setViewData() {
-        self.nameEdit.nameText = self.userCard.name
-        self.surnameEdit.surnameText = self.userCard.surname
-        self.patronymicEdit.patronymicText = self.userCard.patronymic
-        self.ageEdit.ageText = self.userCard.age
-        self.positionEdit.positionText = self.userCard.position.rawValue
-        self.experienceEdit.positionText = self.userCard.expirience
-        self.infoEdit.infoText = self.userCard.info
+        self.nameEdit.text = self.userCard.name
+        self.surnameEdit.text = self.userCard.surname
+        self.patronymicEdit.text = self.userCard.patronymic
+        self.ageEdit.text = self.userCard.age
+        self.positionEdit.developerText = self.userCard.position.rawValue
+        self.experienceEdit.developerText = self.userCard.expirience
+        self.infoEdit.text = self.userCard.info
     }
 
     //MARK: - actions
@@ -72,6 +72,7 @@ class ViewController: UIViewController, EditInfoConrollerDelegate {
     }
 
     //MARK: - prepare for egut
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case "editProfile":

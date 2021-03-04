@@ -17,7 +17,6 @@ class EditInfoConroller: UIViewController, UITextFieldDelegate, UITextViewDelega
     var userCardInfo: PACardInfo?
 
     weak var delegate: EditInfoConrollerDelegate?
-    
     @IBOutlet weak var nameView: UITextField!
     @IBOutlet weak var lastNameView: UITextField!
     @IBOutlet weak var patronymicView: UITextField!
