@@ -14,7 +14,7 @@ protocol EditInfoConrollerDelegate: class {
 
 class EditInfoConroller: UIViewController, UITextFieldDelegate, UITextViewDelegate {
 
-    var userCardInfo: PACardInfo?
+    var userCardInfo: PACardInfo? // модель для передачи данных
 
     weak var delegate: EditInfoConrollerDelegate?
     @IBOutlet weak var nameView: UITextField!
@@ -32,13 +32,13 @@ class EditInfoConroller: UIViewController, UITextFieldDelegate, UITextViewDelega
         }
     }
     @IBOutlet weak var infoView: UITextView!
+    @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var saveView: UIBarButtonItem!
-
 
     private lazy var dataPicker: UIDatePicker = {
         let picker = UIDatePicker()
         picker.datePickerMode = .date
-        picker.preferredDatePickerStyle = .automatic
+        picker.preferredDatePickerStyle = .wheels
         picker.maximumDate = Date()
         picker.addTarget(self,
                          action: #selector(agePickerValueChanged),
@@ -50,15 +50,22 @@ class EditInfoConroller: UIViewController, UITextFieldDelegate, UITextViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self,
-                                                              action: #selector(viewDidTapped)))
+        // MARK: - added save button
 
-        //       let recognizer = UITapGestureRecognizer(target: self,
-        //                                               action: #selector(saveBarButtonTapped))
-        //
-        //        saveView.addGestureRecognizer(recognizer)
+        self.saveButton.addTarget(self, action: #selector(self.saveButtonTapped), for: .touchUpInside)
 
-        self.nameView.becomeFirstResponder()
+        self.setViewData()
+
+//        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self,
+//                                                              action: #selector(self.viewDidTapped)))
+//
+//        let recognizer = UITapGestureRecognizer(target: self,
+//                                                action: #selector(saveBarButtonTapped))
+//        saveButton.addGestureRecognizer(recognizer)
+
+        // MARK: - added picker and firstResponder
+
+        self.nameView.becomeFirstResponder() // при переходе на контроллер первым появляется...
 
         self.nameView.textContentType = .name
         self.nameView.keyboardType = .namePhonePad
@@ -75,22 +82,9 @@ class EditInfoConroller: UIViewController, UITextFieldDelegate, UITextViewDelega
         self.positionView.delegate = self
         self.experienceView.delegate = self
         self.infoView.delegate = self
-
-        self.setViewData()
     }
 
     // MARK: - setting view data
-
-    @objc private func agePickerValueChanged(_datePicker: UIDatePicker) {
-        self.ageView.text = dataPicker.date.toInt
-        self.experienceView.text = dataPicker.date.toInt
-
-        self.delegate?.ageDidChanged(picker: dataPicker, birthDate: _datePicker.date)
-    }
-
-    @objc private func viewDidTapped() {
-        self.view.endEditing(true)
-    }
 
     private func setViewData() {
 
@@ -98,15 +92,13 @@ class EditInfoConroller: UIViewController, UITextFieldDelegate, UITextViewDelega
         self.lastNameView.text = self.userCardInfo?.surname
         self.patronymicView.text = self.userCardInfo?.patronymic
         self.ageView.text = self.userCardInfo?.age
-        //        self.positionView.PAPosi = self.userCardInfo?.position
+//        self.positionView. = self.userCardInfo?.position
         self.experienceView.text = self.userCardInfo?.expirience
         self.infoView.text = self.userCardInfo?.info
     }
 
     private func setModelData() {
-        
         guard let userModel = self.userCardInfo else { return }
-
         self.nameView.text = self.userCardInfo?.name ?? ""
         self.lastNameView.text = self.userCardInfo?.surname ?? ""
         self.patronymicView.text = self.userCardInfo?.patronymic ?? ""
@@ -142,7 +134,7 @@ class EditInfoConroller: UIViewController, UITextFieldDelegate, UITextViewDelega
             let currentTextField = textField.text ?? ""
             let resultText = (currentTextField as NSString).replacingCharacters(in: range,
                                                                                 with: string)
-            if resultText.count >= 30 {
+            if resultText.count >= 600 {
                 return false
             } else {
                 return true
@@ -154,14 +146,20 @@ class EditInfoConroller: UIViewController, UITextFieldDelegate, UITextViewDelega
 
     // MARK: - actions
 
-    @objc func saveBarButtonTapped() {
-        self.navigationController?.popViewController(animated: true)
+    @objc private func saveButtonTapped() {
         self.setModelData()
+        self.navigationController?.popViewController(animated: true)
     }
 
-//    @IBAction func GoToMainePage(_ sender: UIBarButtonItem) {
-//         self.performSegue(withIdentifier: "goToLogin", sender: self)
-//    }
+    @objc private func agePickerValueChanged(_datePicker: UIDatePicker) {
+        self.ageView.text = dataPicker.date.toInt
+        self.experienceView.text = dataPicker.date.toInt
 
+        self.delegate?.ageDidChanged(picker: dataPicker, birthDate: _datePicker.date)
+    }
+
+    @objc private func viewDidTapped() {
+        self.view.endEditing(true)
+    }
 
 }

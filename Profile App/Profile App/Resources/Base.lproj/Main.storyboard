@@ -27,15 +27,15 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Profile_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utt-op-M2z">
-                                <rect key="frame" x="6" y="359" width="402" height="3"/>
+                                <rect key="frame" x="6" y="305" width="402" height="3"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pax-bz-qWc" customClass="RoundedButtonView" customModule="Profile_App" customModuleProvider="target">
-                                <rect key="frame" x="56" y="775" width="302" height="39"/>
+                                <rect key="frame" x="56" y="721" width="302" height="39"/>
                                 <color key="backgroundColor" red="0.0" green="0.25490196079999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Contacts">
@@ -58,7 +58,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="VIw-UM-oln" customClass="RoundedImagView" customModule="Profile_App" customModuleProvider="target">
-                                <rect key="frame" x="131" y="152" width="152" height="120"/>
+                                <rect key="frame" x="131" y="64" width="152" height="154"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="70"/>
@@ -71,7 +71,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TGs-Md-CX3">
-                                <rect key="frame" x="20" y="505" width="374" height="260"/>
+                                <rect key="frame" x="20" y="451" width="374" height="260"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Let me introduce myself. My name is Alex. I’m 21 years old. I was born in Krasnodar, but now live in Moscow. I’m divorced, but now I have a new girlfriend who is a professional dancer. My parents live in a small village near Krasnodar. I’m the only child in the family. I have two lovely kids. My work experience accounts 7 years. What concerns my character and skills, I’m very hard-working, responsible, diligent, and social person with a good sense of humor. In the pastime, I’m crazy about fishing and cars repairing. That’s all all about myself.</string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -79,7 +79,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NTt-jV-Y6a">
-                                <rect key="frame" x="95" y="280" width="225" height="23.5"/>
+                                <rect key="frame" x="95" y="226" width="225" height="23.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edwards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5A7-4l-6xO" customClass="Title">
                                         <rect key="frame" x="0.0" y="0.0" width="86.5" height="23.5"/>
@@ -102,7 +102,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="center" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wEv-0p-rrZ">
-                                <rect key="frame" x="167" y="331" width="67" height="20.5"/>
+                                <rect key="frame" x="167" y="277" width="67" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgM-t6-kUn">
                                         <rect key="frame" x="0.0" y="0.0" width="17.5" height="20.5"/>
@@ -119,11 +119,11 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NIG-un-aGe">
-                                <rect key="frame" x="6" y="498" width="402" height="3"/>
+                                <rect key="frame" x="6" y="444" width="402" height="3"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="K7c-Om-Vse">
-                                <rect key="frame" x="50" y="370" width="314" height="120"/>
+                                <rect key="frame" x="50" y="316" width="314" height="120"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="46c-f5-ig8" customClass="TitleDescriptionView" customModule="Profile_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="50"/>
@@ -185,13 +185,13 @@
                     <navigationItem key="navigationItem" id="C5U-CJ-weO">
                         <rightBarButtonItems>
                             <barButtonItem title="Edit" id="YVq-Ua-im6">
-                                <color key="tintColor" red="0.0" green="0.25490196079999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="L6p-Fz-o44" kind="show" identifier="editProfile" id="EWr-Ff-3eS"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Item" image="square.and.arrow.up" catalog="system" id="vPv-3o-NQE">
-                                <color key="tintColor" red="0.0" green="0.25490196079999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="shareButtonTapped:" destination="BYZ-38-t0r" id="7V1-Dz-lZb"/>
                                 </connections>
@@ -218,14 +218,14 @@
             <objects>
                 <viewController id="L6p-Fz-o44" customClass="EditInfoConroller" customModule="Profile_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JkZ-Zg-6IY" customClass="EditInfoController">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dhe-ir-X04">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJU-vY-SlV">
-                                        <rect key="frame" x="17" y="64" width="381" height="1"/>
+                                        <rect key="frame" x="17" y="63" width="381" height="1"/>
                                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="EfB-J7-qpc"/>
@@ -245,10 +245,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acA-SC-2iz">
-                                        <rect key="frame" x="16" y="34" width="95.5" height="22"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="22" id="qXf-du-n4e"/>
-                                        </constraints>
+                                        <rect key="frame" x="16" y="34" width="95.5" height="21"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -260,7 +257,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Last name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xC8-sd-VXH">
-                                        <rect key="frame" x="16" y="86" width="93" height="22"/>
+                                        <rect key="frame" x="16" y="85" width="93" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22" id="Uku-Ic-2cT"/>
                                             <constraint firstAttribute="width" constant="100" id="lZY-xF-bD9"/>
@@ -390,6 +387,11 @@
                                         <color key="textColor" systemColor="systemGray2Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfG-N5-LdY">
+                                        <rect key="frame" x="103" y="643" width="204" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJI-4S-YTd">
                                         <rect key="frame" x="16" y="306" width="55" height="28"/>
                                         <constraints>
@@ -436,6 +438,7 @@
                         <outlet property="nameView" destination="jm0-Nn-Wrs" id="YVD-N5-3Ld"/>
                         <outlet property="patronymicView" destination="bIE-Cf-pMd" id="DBY-ne-Jj7"/>
                         <outlet property="positionView" destination="oRs-wZ-PAh" id="17R-4u-KZg"/>
+                        <outlet property="saveButton" destination="OfG-N5-LdY" id="JKv-GL-P5L"/>
                         <outlet property="saveView" destination="DYs-fF-n0A" id="cEc-Td-FJW"/>
                     </connections>
                 </viewController>
@@ -448,7 +451,7 @@
             <objects>
                 <viewController title="Contacts" id="ezC-TG-LDm" customClass="ContactsEditController" customModule="Profile_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cv2-dP-36a" customClass="ContactsEditControllerViewController">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hdm-WX-NcC">
@@ -515,7 +518,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Contacts" leftItemsSupplementBackButton="YES" id="iiV-H3-PPJ">
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="nyo-QW-HrG">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="6hU-Mn-WNn" kind="show" identifier="editContactsInfo" id="epp-bf-TOS"/>
                             </connections>
@@ -541,7 +544,16 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.0" green="0.25490196079999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -601,7 +613,7 @@
             <objects>
                 <viewController title="Contacts" id="6hU-Mn-WNn" customClass="ContactsEditController" customModule="Profile_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jxL-5K-S6y" customClass="ContactsEditControllerViewController">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0V9-b1-5YJ" customClass="ContactsControllerEnded" customModule="Profile_App" customModuleProvider="target">
@@ -647,20 +659,20 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r1q-Vu-bwN">
-                                        <rect key="frame" x="64" y="194" width="374" height="3"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QJ0-rC-cyW">
-                                        <rect key="frame" x="64" y="253" width="374" height="3"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
-                                    </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yPD-r8-BLu">
-                                        <rect key="frame" x="64" y="306" width="374" height="3"/>
+                                        <rect key="frame" x="64" y="309" width="374" height="1"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JvI-EQ-rUO">
+                                        <rect key="frame" x="71" y="189" width="374" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jqO-wt-aFs">
+                                        <rect key="frame" x="64" y="245" width="374" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -681,7 +693,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Contacts" leftItemsSupplementBackButton="YES" id="XZW-Lo-abv">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="y0E-o5-IYj">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="TJB-dd-3tQ" kind="unwind" unwindAction="unwindFor:" id="uws-Zd-hjc"/>
                             </connections>
@@ -703,8 +715,8 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="vcQ-e7-eIo"/>
-        <segue reference="LxD-N7-kqU"/>
+        <segue reference="eww-Pl-Z2C"/>
+        <segue reference="EWr-Ff-3eS"/>
         <segue reference="RIh-4u-trd"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.25490196079999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>

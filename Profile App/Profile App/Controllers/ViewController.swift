@@ -26,7 +26,6 @@ class ViewController: UIViewController, EditInfoConrollerDelegate {
     @IBOutlet weak var infoEdit: UITextView!
     @IBOutlet weak var contactButton: UIButton!
 
-
     //MARK: - life cycle
 
     override func viewDidLoad() {
@@ -72,15 +71,14 @@ class ViewController: UIViewController, EditInfoConrollerDelegate {
     }
 
     //MARK: - prepare for egut
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case "editProfile":
             if let controller = segue.destination as? EditInfoConroller {
-                controller.userCardInfo = self.userCard
+                controller.userCardInfo = self.userCard // передача информация между контроллерами
             }
         case "saveAndEditSegue":
-            if let controller = segue.destination as? EditInfoConroller{
+            if let controller = segue.destination as? EditInfoConroller {
                 controller.delegate = self
             }
 //        case "editContactsInfo":
