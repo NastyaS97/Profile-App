@@ -7,9 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, EditInfoConrollerDelegate {
-    func nameDidCganged(name: String) {
-    }
+class ViewController: UIViewController {
 
     //MARK: - variables
 
@@ -60,6 +58,8 @@ class ViewController: UIViewController, EditInfoConrollerDelegate {
         self.infoEdit.text = self.userCard.info
     }
 
+    
+
     //MARK: - actions
 
     @IBAction func shareButtonTapped(_ sender: UIBarButtonItem) {
@@ -70,41 +70,23 @@ class ViewController: UIViewController, EditInfoConrollerDelegate {
         self.present(activityController, animated: true)
     }
 
-    //MARK: - prepare for egut
+    //MARK: - prepare for segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case "editProfile":
             if let controller = segue.destination as? EditInfoConroller {
-                controller.userCardInfo = self.userCard // передача информация между контроллерами
+                controller.userCard = self.userCard // передача информация между контроллерами
             }
         case "saveAndEditSegue":
             if let controller = segue.destination as? EditInfoConroller {
-                controller.delegate = self
+                controller.userCard = self.userCard // передача информация между контроллерами
             }
-//        case "editContactsInfo":
-//            if let controller = segue.destination as? ContactsEditController {
-//                controller.userCardInfo = self.userCard
-//            }
         default:
             break
         }
     }
+
     @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
         print(unwindSegue.destination)
     }
-
-    func ageDidChanged(picker: UIDatePicker, birthDate: Date) {
-        print(birthDate.toInt)
-    }
-
-    func nameDidChanged(name: String) {
-        self.userCard.name = name
-        self.setViewData()
-    }
-
-//    func surnameDidChanged(name: String) {
-//        self.userCard.info = infoEdit
-//        self.setViewData()
-//    }
-
 }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E070472B25F046AD00B03CF4 /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070472A25F046AD00B03CF4 /* Date+Ex.swift */; };
-		E070472E25F051E100B03CF4 /* ContactsControllerEnded.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070472D25F051E100B03CF4 /* ContactsControllerEnded.swift */; };
 		E07C0FC925ED2C210049A8B5 /* PACardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C0FC825ED2C210049A8B5 /* PACardInfo.swift */; };
 		E07C0FCC25ED2C960049A8B5 /* PAPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C0FCB25ED2C960049A8B5 /* PAPosition.swift */; };
 		E07C0FD625ED33020049A8B5 /* RoundedImagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C0FD525ED33020049A8B5 /* RoundedImagView.swift */; };
@@ -23,6 +22,8 @@
 		E07DF72725EF90640007EBE9 /* SF-Font-Pro.dmg in Resources */ = {isa = PBXBuildFile; fileRef = E07DF72625EF90640007EBE9 /* SF-Font-Pro.dmg */; };
 		E07DF72A25EF91660007EBE9 /* SF-Pro-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = E07DF72925EF91660007EBE9 /* SF-Pro-Display-Black.otf */; };
 		E07DF72D25EF91C60007EBE9 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E07DF72C25EF91C60007EBE9 /* SF-Pro-Display-Medium.otf */; };
+		E0B6960925F3EBA700C0C8ED /* LastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B6960825F3EBA700C0C8ED /* LastController.swift */; };
+		E0B6961125F3FC2C00C0C8ED /* PAContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B6961025F3FC2C00C0C8ED /* PAContacts.swift */; };
 		E0F9DBA025EC4DFA003ECF11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F9DB9F25EC4DFA003ECF11 /* AppDelegate.swift */; };
 		E0F9DBA225EC4DFA003ECF11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F9DBA125EC4DFA003ECF11 /* SceneDelegate.swift */; };
 		E0F9DBA425EC4DFA003ECF11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F9DBA325EC4DFA003ECF11 /* ViewController.swift */; };
@@ -34,7 +35,6 @@
 
 /* Begin PBXFileReference section */
 		E070472A25F046AD00B03CF4 /* Date+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
-		E070472D25F051E100B03CF4 /* ContactsControllerEnded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsControllerEnded.swift; sourceTree = "<group>"; };
 		E07C0FC825ED2C210049A8B5 /* PACardInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PACardInfo.swift; sourceTree = "<group>"; };
 		E07C0FCB25ED2C960049A8B5 /* PAPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAPosition.swift; sourceTree = "<group>"; };
 		E07C0FD525ED33020049A8B5 /* RoundedImagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImagView.swift; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		E07DF72625EF90640007EBE9 /* SF-Font-Pro.dmg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Font-Pro.dmg"; sourceTree = "<group>"; };
 		E07DF72925EF91660007EBE9 /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
 		E07DF72C25EF91C60007EBE9 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		E0B6960825F3EBA700C0C8ED /* LastController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastController.swift; sourceTree = "<group>"; };
+		E0B6961025F3FC2C00C0C8ED /* PAContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAContacts.swift; sourceTree = "<group>"; };
 		E0F9DB9C25EC4DFA003ECF11 /* Profile App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Profile App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F9DB9F25EC4DFA003ECF11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0F9DBA125EC4DFA003ECF11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			children = (
 				E07C0FC825ED2C210049A8B5 /* PACardInfo.swift */,
 				E07C0FCB25ED2C960049A8B5 /* PAPosition.swift */,
+				E0B6961025F3FC2C00C0C8ED /* PAContacts.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -94,7 +97,7 @@
 				E0F9DBA325EC4DFA003ECF11 /* ViewController.swift */,
 				E07DF72225EEA2AD0007EBE9 /* EditInfoConroller.swift */,
 				E07DF71D25EEA2520007EBE9 /* ContactsEditController.swift */,
-				E070472D25F051E100B03CF4 /* ContactsControllerEnded.swift */,
+				E0B6960825F3EBA700C0C8ED /* LastController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E07DF72325EEA2AD0007EBE9 /* EditInfoConroller.swift in Sources */,
+				E0B6960925F3EBA700C0C8ED /* LastController.swift in Sources */,
 				E07C0FC925ED2C210049A8B5 /* PACardInfo.swift in Sources */,
 				E07C0FCC25ED2C960049A8B5 /* PAPosition.swift in Sources */,
 				E07C0FD625ED33020049A8B5 /* RoundedImagView.swift in Sources */,
@@ -283,9 +287,9 @@
 				E070472B25F046AD00B03CF4 /* Date+Ex.swift in Sources */,
 				E07DF71E25EEA2520007EBE9 /* ContactsEditController.swift in Sources */,
 				E0F9DBBC25EC5728003ECF11 /* RoundedButtonView.swift in Sources */,
+				E0B6961125F3FC2C00C0C8ED /* PAContacts.swift in Sources */,
 				E0F9DBA225EC4DFA003ECF11 /* SceneDelegate.swift in Sources */,
 				E07DF70F25EE88290007EBE9 /* UIView+Ex.swift in Sources */,
-				E070472E25F051E100B03CF4 /* ContactsControllerEnded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
